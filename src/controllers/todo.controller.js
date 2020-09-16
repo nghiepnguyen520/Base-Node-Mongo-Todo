@@ -5,10 +5,6 @@ const TodoController = {};
 TodoController.getAllTodosController = async (req, res) => {
   try {
     const todos = await getAllTodosService();
-    console.log(
-      "DEBUG_CODE: TodoController.getAllTodosController -> todos",
-      todos
-    );
     res.status(200).json({
       todos,
     });

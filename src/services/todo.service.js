@@ -1,3 +1,4 @@
+const { model } = require("mongoose");
 const todoModel = require("../models/todo.model");
 
 const TodoService = {};
@@ -5,5 +6,4 @@ const TodoService = {};
 TodoService.getAllTodosService = async () => {
   return await todoModel.find({});
 };
-
 module.exports = TodoService;
